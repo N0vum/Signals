@@ -1,7 +1,7 @@
 let "s=0"
 let "i=1"
 sudo apt-get install fim
-if [[ -z fim ]] 
+if [[ -z `whereis fim` ]] 
 then exit
 else
 echo "Введите названия сигналов"
