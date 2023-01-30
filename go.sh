@@ -12,7 +12,7 @@ jpg_pid=$!
 sleep 1
 kill $jpg_pid
 read answer
-key=`head -n ${i} keys.txt | grep $answer`
+key=`head -n ${i} keys.txt | grep -i "\b${answer}\b"`
 if [[ !(-z $key) ]]
 then let "s++"
 fi
