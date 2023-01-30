@@ -21,7 +21,7 @@ fi
 done
 let "i++"
 done
-echo $s
+echo "У вас $s верных ответов из 9"
 sudo apt-get remove fim
 fi
 	
