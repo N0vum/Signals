@@ -5,7 +5,7 @@ then exit
 else
 echo "Введите названия сигналов"
 sleep 1
-for i in $(seq 1 9);
+for i in $(seq 9);
 do
 fim $i.jpg &
 jpg_pid=$!
