@@ -1,8 +1,8 @@
 flash_pic(){
-	fim "$1.jpg" &
-	jpg_pid=$!
-	sleep 1
-	kill $jpg_pid
+fim "img/$1.jpg" &
+jpg_pid=$!
+sleep 1
+kill $jpg_pid
 }
 sudo apt-get install fim
 [[ -z `whereis fim` ]] && exit
